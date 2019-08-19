@@ -105,5 +105,14 @@ MakingUseOfExecutionStateChanges
 [self rotateLabelDown];
 ```
 
+# animateWithDuration
+
+For example, if you want to fade a view until it is totally transparent and then remove it from your view hierarchy, you could use code similar to the following:
+``` objective-c
+[UIView animateWithDuration:0.2
+     animations:^{view.alpha = 0.0;}
+     completion:^(BOOL finished){ [view removeFromSuperview]; }];
+```
+
 ![ezgif-2-f459ee7ce95e](https://user-images.githubusercontent.com/24994818/63232364-d9adcf00-c1ec-11e9-8cf6-515213a01d83.gif)
 
