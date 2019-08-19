@@ -6,6 +6,8 @@ MakingUseOfExecutionStateChanges
 - background -> inactive
 - inactive -> Active
 
+![56855170-ef2a8080-68ff-11e9-922b-05378bdca643](https://user-images.githubusercontent.com/24994818/63232402-3ad5a280-c1ed-11e9-9276-923a7d0227eb.png)
+
 # Handling the inective state
 
 - Charge the program into an iphone.
