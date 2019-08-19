@@ -8,6 +8,8 @@ inactive -> Active
 
 # Handling the inective state
 
+- Charge the program into an iphone.
+
 # ViewController.h
 
 ``` objective-c
