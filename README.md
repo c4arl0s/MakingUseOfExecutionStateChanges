@@ -92,5 +92,18 @@ MakingUseOfExecutionStateChanges
 @end
 ```
 
+- UIView defines a class method called animateWithDuration: animations:completion:
+- Any animatable attributes that we set within the animations block don’t have an immediate effect on the receiver.
+- Instead, Core Animation will smoothly transition that attribute from its current value to the new value we specify.
+- This is what’s called an implicit animation and is one of the main features of Core Animation.
+- The final completion block lets us specify what will happen after the animation is complete.
+- So, each of these methods sets the label’s transform property to a particular rotation, specified in radians.
+- Each also sets up a completion block to just call the other method, so the text will continue to animate back and forth forever.
+- Finally, we need to set up a way to kick-start the animation. For now, we’ll do this by adding this line at the end of viewDidLoad (but we’ll change this later, for reasons we’ll describe at that time):
+
+```objective-c
+[self rotateLabelDown];
+```
+
 ![ezgif-2-f459ee7ce95e](https://user-images.githubusercontent.com/24994818/63232364-d9adcf00-c1ec-11e9-8cf6-515213a01d83.gif)
 
